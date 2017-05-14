@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
         Button btn_voteChart = (Button) findViewById(R.id.voteChart);
         Button btn_vote = (Button) findViewById(R.id.voteStart);
-
-        final FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        Button btn_order = (Button) findViewById(R.id.order);
+        Button btn_salary = (Button) findViewById(R.id.salary);
 
         btn_voteChart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +35,21 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 StartVote starVote = new StartVote();
                 callFragment(starVote);
+            }
+        });
+        btn_order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OrderFrag orderFrag = new OrderFrag();
+                callFragment(orderFrag);
+            }
+        });
+
+        btn_salary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Salary_Fragment salary_fragment = new Salary_Fragment();
+                callFragment(salary_fragment);
             }
         });
 

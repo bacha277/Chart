@@ -36,7 +36,27 @@
         android:text="Vote"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf ="@id/voteChart"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="2dp"
+        />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="order"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf ="@id/voteStart"
+        android:layout_marginLeft="2dp"
+        />
+
+    <Button
+        android:id="@+id/salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="salary"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf ="@id/order"
+        android:layout_marginLeft="2dp"
         />
 
 </RelativeLayout>
